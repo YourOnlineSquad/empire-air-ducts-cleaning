@@ -37,6 +37,37 @@ faq_schema: >
   </script>
 ---
 
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden;">
+  <symbol id="icon-airflow" viewBox="0 0 64 64" fill="none">
+    <path d="M8 32h48" stroke="currentColor" stroke-width="2"/>
+    <path d="M16 24c6-6 12-6 18 0s12 6 18 0" stroke="currentColor" stroke-width="2"/>
+    <path d="M16 40c6 6 12 6 18 0s12-6 18 0" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+
+  <symbol id="icon-fan" viewBox="0 0 64 64" fill="none">
+    <circle cx="32" cy="32" r="6" stroke="currentColor" stroke-width="2"/>
+    <path d="M32 10c6 4 6 10 0 14" stroke="currentColor" stroke-width="2"/>
+    <path d="M54 32c-4 6-10 6-14 0" stroke="currentColor" stroke-width="2"/>
+    <path d="M32 54c-6-4-6-10 0-14" stroke="currentColor" stroke-width="2"/>
+    <path d="M10 32c4-6 10-6 14 0" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+
+  <symbol id="icon-exhaust" viewBox="0 0 64 64" fill="none">
+    <rect x="12" y="12" width="40" height="16" stroke="currentColor" stroke-width="2"/>
+    <path d="M20 32v10" stroke="currentColor" stroke-width="2"/>
+    <path d="M32 32v14" stroke="currentColor" stroke-width="2"/>
+    <path d="M44 32v10" stroke="currentColor" stroke-width="2"/>
+    <path d="M18 48c4 4 8 4 12 0" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+
+  <symbol id="icon-air-quality" viewBox="0 0 64 64" fill="none">
+    <circle cx="20" cy="32" r="4" stroke="currentColor" stroke-width="2"/>
+    <circle cx="32" cy="24" r="3" stroke="currentColor" stroke-width="2"/>
+    <circle cx="44" cy="36" r="5" stroke="currentColor" stroke-width="2"/>
+    <path d="M12 32h40" stroke="currentColor" stroke-width="1"/>
+  </symbol>
+</svg>
+
 <section class="hero">
     <div class="airflow-vector"></div>
     <div class="container grid-2" style="align-items: center;">
@@ -72,21 +103,33 @@ faq_schema: >
         
         <div class="grid-3">
             <div class="glass-card">
-                <div class="card-icon">🌬️</div>
+                <div class="card-icon">
+                    <svg class="icon icon-airflow icon-glow" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                        <use href="#icon-airflow"></use>
+                    </svg>
+                </div>
                 <h3>Residential Air Duct Cleaning</h3>
                 <p>Eradicate years of settled dust, pet dander, pollen, and biological contaminants circulating through your central HVAC system. We deep-clean supply lines, return vents, and main trunk lines to restore healthy indoor air quality. Ask about our <a href="/air-duct-cleaning/mold-removal.html">air duct mold removal</a> solutions for damp systems.</p>
                 <a href="/air-duct-cleaning/residential.html" class="btn btn-outline-dark" style="width:100%">Explore Duct Cleaning</a>
             </div>
             
             <div class="glass-card">
-                <div class="card-icon">🔥</div>
+                <div class="card-icon">
+                    <svg class="icon icon-fan icon-glow" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                        <use href="#icon-fan"></use>
+                    </svg>
+                </div>
                 <h3>Professional Dryer Vent Clearing</h3>
                 <p>Lint buildup is a leading, yet easily preventable, cause of catastrophic house fires. We thoroughly clear <a href="/dryer-vent-cleaning/clogged-vent.html">clogged vents</a> from the back of your machine all the way to the exterior exhaust flap. This restores airflow, drastically speeds up drying times, and guarantees <a href="/dryer-vent-cleaning/fire-prevention.html">fire prevention</a>.</p>
                 <a href="/dryer-vent-cleaning/index.html" class="btn btn-outline-dark" style="width:100%">Explore Vent Clearing</a>
             </div>
             
             <div class="glass-card">
-                <div class="card-icon">🏢</div>
+                <div class="card-icon">
+                    <svg class="icon icon-exhaust icon-glow" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                        <use href="#icon-exhaust"></use>
+                    </svg>
+                </div>
                 <h3>Commercial Hood Cleaning</h3>
                 <p>Keep your restaurant, cafeteria, or commercial kitchen fully compliant with local fire codes. We provide rigorous, bare-metal <a href="/commercial-hood-cleaning/restaurant-hood-cleaning.html">restaurant hood cleaning</a> that safely dissolves and removes dangerous, highly-flammable grease buildup from your exhaust systems and roof fans.</p>
                 <a href="/commercial-hood-cleaning/index.html" class="btn btn-outline-dark" style="width:100%">Explore Hood Cleaning</a>
