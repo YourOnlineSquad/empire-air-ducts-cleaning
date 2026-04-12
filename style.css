@@ -388,6 +388,5 @@ details p { color: var(--text-muted); margin-bottom: 0; }
     .md-order-1 { order: 1; }
     .md-order-2 { order: 2; }
 }
-/* Add these to the Utilities section at the bottom of your style.css */
 .d-block { display: block; }
 .border-radius-md { border-radius: var(--radius-md); }
