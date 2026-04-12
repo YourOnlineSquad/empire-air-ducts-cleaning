@@ -145,17 +145,32 @@ p { margin-bottom: 1.5rem; font-size: 1.15rem; }
 }
 
 /* =========================================
-   PREMIUM BUTTONS
+   UPDATED BUTTONS
    ========================================= */
-.btn { display: inline-flex; align-items: center; justify-content: center; padding: 16px 36px; border-radius: 50px; font-weight: 700; transition: var(--transition); text-align: center; cursor: pointer; border: none; font-size: 1.05rem; letter-spacing: 0.5px; }
+.btn { 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 14px 32px; 
+    border-radius: 10px; 
+    font-weight: 700; 
+    transition: var(--transition); 
+    text-align: center; 
+    cursor: pointer; 
+    border: none; 
+    font-size: 1.05rem; 
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
 
 .btn-primary { background: var(--cta-primary); color: #fff; }
 .btn-primary:hover { background: var(--brand-teal); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 191, 166, 0.3); }
 
 .btn-glow { background: linear-gradient(135deg, var(--brand-primary), var(--brand-teal)); color: #fff; box-shadow: var(--glow-shadow); }
 .btn-glow:hover { 
-    box-shadow: 0 0 40px rgba(62, 166, 255, 0.7);
-    transform: translateY(-4px) scale(1.03); 
+    box-shadow: 0 0 25px rgba(0, 191, 166, 0.6);
+    transform: translateY(-3px) scale(1.02); 
     background: linear-gradient(135deg, var(--btn-glow-hover), var(--brand-cyan)); 
     color: var(--bg-dark); 
 }
@@ -165,6 +180,40 @@ p { margin-bottom: 1.5rem; font-size: 1.15rem; }
 
 .btn-outline-dark { border: 2px solid var(--cta-alt); color: var(--cta-alt); background: transparent; }
 .btn-outline-dark:hover { background: var(--cta-alt); color: white; transform: translateY(-2px); }
+
+/* =========================================
+   NEW CARD BUTTON
+   ========================================= */
+.btn-card {
+    border-radius: 10px;
+    padding: 12px 22px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    background: transparent;
+    border: 2px solid var(--cta-alt);
+    color: var(--cta-alt);
+    width: auto;
+    min-width: 160px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.btn-card:hover {
+    background: var(--cta-alt);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 0 18px rgba(47, 128, 237, 0.35);
+}
+
+@media (min-width: 768px) {
+    .btn-card {
+        white-space: nowrap;
+    }
+}
 
 /* =========================================
    ANIMATIONS & VISUAL EFFECTS
@@ -255,7 +304,9 @@ p { margin-bottom: 1.5rem; font-size: 1.15rem; }
     position: relative; 
     z-index: 2; 
     overflow: hidden; 
-    text-align: left; 
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 .glass-card h3 {
     font-size: 1.6rem;
@@ -390,3 +441,8 @@ details p { color: var(--text-muted); margin-bottom: 0; }
 }
 .d-block { display: block; }
 .border-radius-md { border-radius: var(--radius-md); }
+.cta-group { display: flex; gap: 20px; flex-wrap: wrap; }
+.cta-group-center { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+.w-100 { width: 100%; }
+.text-light-muted { color: #CBD5E1; }
+.hidden-svg { position: absolute; width: 0; height: 0; overflow: hidden; }
