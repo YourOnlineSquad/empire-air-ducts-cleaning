@@ -42,7 +42,7 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--text-main);
     background-color: var(--bg-light);
-    line-height: 1.7;
+    line-height: 1.8;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
@@ -53,16 +53,16 @@ a { text-decoration: none; color: var(--cta-alt); transition: var(--transition);
    GLOBAL TYPOGRAPHY
    ========================================= */
 h1, h2, h3, h4 { color: var(--bg-dark); font-weight: 800; line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; }
-h2 { font-size: clamp(2rem, 4vw, 2.8rem); }
-h3 { font-size: clamp(1.3rem, 2.5vw, 1.6rem); }
-p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+h2 { font-size: clamp(2.2rem, 4vw, 3rem); }
+h3 { font-size: clamp(1.4rem, 2.5vw, 1.7rem); }
+p { margin-bottom: 1.5rem; font-size: 1.15rem; }
 
-.section-title { font-size: clamp(2.2rem, 4.5vw, 3rem); color: var(--bg-dark); font-weight: 800; margin-bottom: 20px; letter-spacing: -0.02em; line-height: 1.15; }
-.section-title-light { font-size: clamp(2.2rem, 4.5vw, 3rem); color: var(--text-light); font-weight: 800; margin-bottom: 20px; letter-spacing: -0.02em; line-height: 1.15; }
-.section-subtitle { font-size: 1.15rem; color: var(--text-muted); margin-bottom: 40px; line-height: 1.7; }
-.eyebrow { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; color: var(--brand-teal); font-weight: 800; margin-bottom: 15px; display: block; }
-.body-copy { font-size: 1.1rem; line-height: 1.8; color: var(--text-main); margin-bottom: 1.5rem; }
-.body-copy-large { font-size: 1.2rem; line-height: 1.8; color: var(--text-main); margin-bottom: 1.5rem; }
+.section-title { font-size: clamp(2.4rem, 4.5vw, 3.2rem); color: var(--bg-dark); font-weight: 800; margin-bottom: 20px; letter-spacing: -0.02em; line-height: 1.15; }
+.section-title-light { font-size: clamp(2.4rem, 4.5vw, 3.2rem); color: #FFFFFF; font-weight: 800; margin-bottom: 20px; letter-spacing: -0.02em; line-height: 1.15; }
+.section-subtitle { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 40px; line-height: 1.8; }
+.eyebrow { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 2px; color: var(--brand-teal); font-weight: 800; margin-bottom: 15px; display: block; }
+.body-copy { font-size: 1.15rem; line-height: 1.8; color: var(--text-main); margin-bottom: 1.5rem; }
+.body-copy-large { font-size: 1.25rem; line-height: 1.8; color: var(--text-main); margin-bottom: 1.5rem; }
 
 /* Gradient Animation */
 .gradient-text {
@@ -91,8 +91,6 @@ p { margin-bottom: 1.5rem; font-size: 1.05rem; }
    ========================================= */
 .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 2; }
 .section { padding: 100px 0; position: relative; overflow: hidden; }
-.section-dark { background-color: var(--bg-dark); color: var(--text-light); }
-.section-dark p { color: #B0BEC5; }
 .bg-light { background-color: var(--bg-light); }
 
 .grid-2 { display: grid; grid-template-columns: 1fr; gap: 50px; }
@@ -106,6 +104,25 @@ p { margin-bottom: 1.5rem; font-size: 1.05rem; }
 }
 @media (min-width: 1024px) {
     .grid-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* =========================================
+   DARK SECTIONS
+   ========================================= */
+.section-dark { 
+    background-color: var(--bg-dark); 
+    color: var(--text-light); 
+}
+.section-dark h2, 
+.section-dark h3, 
+.section-dark h4 { 
+    color: #FFFFFF; 
+}
+.section-dark p { 
+    color: #E2E8F0; 
+}
+.section-dark .section-subtitle {
+    color: #CBD5E1;
 }
 
 /* =========================================
@@ -200,6 +217,13 @@ p { margin-bottom: 1.5rem; font-size: 1.05rem; }
     100% { transform: translate3d(-4%, -3%, 0) scale(1.06); }
 }
 
+/* Moving SVG Airflow Vectors */
+.airflow-vector { position: absolute; width: 150%; height: 150%; top: -25%; left: -25%; opacity: 0.015; background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 50 Q 25 25, 50 50 T 100 50' fill='none' stroke='%2300BFA6' stroke-width='2'/%3E%3C/svg%3E"); background-size: 250px 250px; animation: panVector 50s linear infinite; z-index: 0; pointer-events: none; }
+@keyframes panVector {
+    0% { background-position: 0 0; }
+    100% { background-position: 500px 250px; }
+}
+
 /* Subtly Floating Images */
 .float-img { animation: float 7s ease-in-out infinite; box-shadow: var(--card-shadow); border: 1px solid rgba(255,255,255,0.6); }
 .float-img-delayed { animation: float 7s ease-in-out 3.5s infinite; box-shadow: var(--card-shadow); border: 1px solid rgba(255,255,255,0.6); }
@@ -219,11 +243,50 @@ p { margin-bottom: 1.5rem; font-size: 1.05rem; }
     100% { transform: scale(1.5); opacity: 0.6; }
 }
 
-/* Premium Glassmorphism Cards */
-.glass-card { background: var(--bg-card); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.8); padding: 45px 35px; border-radius: var(--radius-lg); box-shadow: var(--card-shadow); transition: var(--transition); position: relative; z-index: 2; overflow: hidden; text-align: left; }
-.glass-card:hover { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(0, 191, 166, 0.1), inset 0 0 0 1px rgba(0, 191, 166, 0.2); border-color: transparent; }
-.section-dark .glass-card { background: rgba(30, 41, 59, 0.4); border-color: rgba(255, 255, 255, 0.05); }
-.section-dark .glass-card:hover { border-color: rgba(0, 191, 166, 0.3); background: rgba(30, 41, 59, 0.6); }
+/* Premium Glassmorphism Cards (Light Mode) */
+.glass-card { 
+    background: var(--bg-card); 
+    backdrop-filter: blur(16px); 
+    border: 1px solid rgba(255, 255, 255, 0.8); 
+    padding: 45px 35px; 
+    border-radius: var(--radius-lg); 
+    box-shadow: var(--card-shadow); 
+    transition: var(--transition); 
+    position: relative; 
+    z-index: 2; 
+    overflow: hidden; 
+    text-align: left; 
+}
+.glass-card h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: var(--bg-dark);
+}
+.glass-card:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 35px rgba(0, 191, 166, 0.1), inset 0 0 0 1px rgba(0, 191, 166, 0.2); 
+    border-color: transparent; 
+}
+
+/* Premium Glassmorphism Cards (Dark Mode) */
+.section-dark .glass-card { 
+    background: rgba(20, 35, 50, 0.6); 
+    border: 1px solid rgba(255, 255, 255, 0.12); 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+.section-dark .glass-card h3 {
+    color: #FFFFFF;
+}
+.section-dark .glass-card p.body-copy,
+.section-dark .glass-card p {
+    color: #CBD5E1;
+}
+.section-dark .glass-card:hover { 
+    background: rgba(30, 45, 65, 0.8); 
+    border-color: rgba(0, 191, 166, 0.4); 
+    box-shadow: 0 20px 40px rgba(0, 191, 166, 0.2); 
+}
 
 /* Card Icons */
 .card-icon { width: 70px; height: 70px; background: linear-gradient(135deg, rgba(30, 136, 229, 0.1), rgba(0, 191, 166, 0.1)); border-radius: 20px; display: flex; align-items: center; justify-content: center; color: var(--brand-primary); margin-bottom: 25px; font-size: 2rem; box-shadow: inset 0 0 15px rgba(255,255,255,0.8); transition: var(--transition); }
@@ -239,7 +302,7 @@ p { margin-bottom: 1.5rem; font-size: 1.05rem; }
 /* Polished FAQ Blocks */
 details { background: #FFFFFF; padding: 25px 30px; border-radius: var(--radius-md); margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.02); border: 1px solid #E2E8F0; cursor: pointer; transition: var(--transition); }
 details:hover { border-color: var(--brand-teal); box-shadow: 0 8px 20px rgba(0, 191, 166, 0.05); }
-summary { font-weight: 700; font-size: 1.15rem; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--bg-dark); }
+summary { font-weight: 700; font-size: 1.2rem; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--bg-dark); }
 summary::-webkit-details-marker { display: none; }
 details[open] summary { color: var(--brand-primary); margin-bottom: 15px; }
 details p { color: var(--text-muted); margin-bottom: 0; }
