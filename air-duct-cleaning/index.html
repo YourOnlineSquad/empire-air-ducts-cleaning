@@ -37,112 +37,156 @@ faq_schema: >
   </script>
 ---
 
-<section class="hero" style="padding: 100px 0 80px;">
-    <div class="airflow-vector"></div>
-    <div class="container text-center" style="position: relative; z-index: 2; max-width: 900px;">
-        <h1 style="color: white; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 25px;">Advanced Air Duct Cleaning Services</h1>
-        <p style="font-size: 1.25rem; color: #cbd5e1; margin-bottom: 40px;">Breathe cleaner, healthier air with our state-of-the-art negative pressure extraction technology. We eradicate hidden airborne contaminants for homes and businesses across Southern California.</p>
-        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-            <a href="tel:9514812118" class="btn btn-glow">Get a Free Estimate</a>
-            <a href="#specialized-services" class="btn btn-outline" aria-label="Skip to specialized services section">Choose Your Service</a>
+<svg aria-hidden="true" class="hidden-svg">
+  <symbol id="icon-home" viewBox="0 0 64 64" fill="none">
+    <path d="M32 8L4 32v24h56V32L32 8z" stroke="currentColor" stroke-width="2"/>
+    <path d="M24 56V36h16v20" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <symbol id="icon-building" viewBox="0 0 64 64" fill="none">
+    <path d="M12 56V8h40v48" stroke="currentColor" stroke-width="2"/>
+    <path d="M4 56h56" stroke="currentColor" stroke-width="2"/>
+    <rect x="24" y="20" width="4" height="4" fill="currentColor"/>
+    <rect x="36" y="20" width="4" height="4" fill="currentColor"/>
+    <rect x="24" y="32" width="4" height="4" fill="currentColor"/>
+    <rect x="36" y="32" width="4" height="4" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-shield" viewBox="0 0 64 64" fill="none">
+    <path d="M32 4l24 10v20c0 16-24 26-24 26S8 50 8 34V14L32 4z" stroke="currentColor" stroke-width="2"/>
+    <path d="M22 32l8 8 14-14" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+</svg>
+
+<section class="hero">
+    <div class="container grid-2">
+        <div class="order-2 md-order-1">
+            <span class="eyebrow">Advanced Negative Pressure</span>
+            <h1 class="hero-title">Advanced <span class="gradient-text">Air Duct Cleaning</span> Services</h1>
+            <p class="hero-subtitle">Breathe cleaner, healthier air with our state of the art negative pressure extraction technology. We eradicate hidden airborne contaminants for homes and businesses across Southern California.</p>
+            <div class="cta-group">
+                <a href="tel:9514812118" class="btn btn-glow">Get a Free Estimate</a>
+                <a href="#specialized-services" class="btn btn-outline" aria-label="Skip to specialized services section">Choose Your Service</a>
+            </div>
+        </div>
+        <div class="order-1 md-order-2">
+            <div class="hero-visual-card">
+                <div class="hero-glow"></div>
+                <img src="/empire-air-ducts-cleaning/assets/images/Vent/air-duct-interior-system.svg" alt="Diagram showing the interior system of an air duct getting cleaned" class="hero-vector">
+            </div>
         </div>
     </div>
 </section>
 
 <section id="specialized-services" class="section bg-light">
     <div class="container">
-        <div style="text-align: center; max-width: 800px; margin: 0 auto 50px;">
-            <h2 style="font-size: 2.5rem;">Targeted Ventilation Solutions</h2>
-            <p style="font-size: 1.1rem; color: var(--text-muted);">Every HVAC system is unique. We deploy specialized extraction protocols tailored perfectly to your specific property type and environmental needs.</p>
+        <div class="text-center max-w-800 mb-50">
+            <span class="eyebrow">Comprehensive Coverage</span>
+            <h2 class="section-title">Targeted <span class="gradient-text">Ventilation Solutions</span></h2>
+            <p class="section-subtitle">Every HVAC system is unique. We deploy specialized extraction protocols tailored perfectly to your specific property type and environmental needs.</p>
         </div>
         
         <div class="grid-3">
-            <a href="/empire-air-ducts-cleaning/air-duct-cleaning/residential.html" class="glass-card" style="display: block; text-align: center; background: white; border-color: #e2e8f0;">
-                <div class="card-icon" style="margin: 0 auto 20px;" aria-hidden="true">🏠</div>
-                <h3 style="color: var(--text-main);">Residential Air Ducts</h3>
-                <p style="color: var(--text-muted); margin-bottom: 20px;">Protect your family from recirculated dust, pet dander, and allergens. Perfect for local homeowners, renters, and property managers.</p>
-                <span class="btn btn-outline-dark" style="width: 100%; border-radius: 8px;">View Residential Details</span>
+            <a href="/empire-air-ducts-cleaning/air-duct-cleaning/residential.html" class="glass-card text-center d-block">
+                <div class="card-icon max-w-800" style="margin: 0 auto 25px auto;">
+                    <svg class="icon icon-airflow icon-glow" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                        <use href="#icon-home"></use>
+                    </svg>
+                </div>
+                <h3 class="mb-20">Residential Air Ducts</h3>
+                <p class="body-copy text-muted mb-30">Protect your family from recirculated dust, pet dander, and allergens. Perfect for local homeowners, renters, and property managers.</p>
+                <span class="btn btn-outline-dark w-100 border-radius-md">View Residential Details</span>
             </a>
             
-            <a href="/empire-air-ducts-cleaning/air-duct-cleaning/commercial.html" class="glass-card" style="display: block; text-align: center; background: white; border-color: #e2e8f0;">
-                <div class="card-icon" style="margin: 0 auto 20px;" aria-hidden="true">🏢</div>
-                <h3 style="color: var(--text-main);">Commercial HVAC Ducts</h3>
-                <p style="color: var(--text-muted); margin-bottom: 20px;">Maintain clean air for your employees and customers. We safely service retail spaces, office buildings, warehouses, and medical facilities.</p>
-                <span class="btn btn-outline-dark" style="width: 100%; border-radius: 8px;">View Commercial Details</span>
+            <a href="/empire-air-ducts-cleaning/air-duct-cleaning/commercial.html" class="glass-card text-center d-block">
+                <div class="card-icon max-w-800" style="margin: 0 auto 25px auto;">
+                    <svg class="icon icon-fan icon-glow" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                        <use href="#icon-building"></use>
+                    </svg>
+                </div>
+                <h3 class="mb-20">Commercial HVAC Ducts</h3>
+                <p class="body-copy text-muted mb-30">Maintain clean air for your employees and customers. We safely service retail spaces, office buildings, warehouses, and medical facilities.</p>
+                <span class="btn btn-outline-dark w-100 border-radius-md">View Commercial Details</span>
             </a>
             
-            <a href="/empire-air-ducts-cleaning/air-duct-cleaning/mold-removal.html" class="glass-card" style="display: block; text-align: center; background: white; border-color: #e2e8f0;">
-                <div class="card-icon" style="margin: 0 auto 20px;" aria-hidden="true">🦠</div>
-                <h3 style="color: var(--text-main);">HVAC Mold Removal</h3>
-                <p style="color: var(--text-muted); margin-bottom: 20px;">Safely remediate damp, musty ductwork. We use EPA-registered sanitizers to neutralize active microbial growth and dormant mold spores.</p>
-                <span class="btn btn-outline-dark" style="width: 100%; border-radius: 8px;">View Mold Removal Details</span>
+            <a href="/empire-air-ducts-cleaning/air-duct-cleaning/mold-removal.html" class="glass-card text-center d-block">
+                <div class="card-icon max-w-800" style="margin: 0 auto 25px auto;">
+                    <svg class="icon icon-exhaust icon-glow" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                        <use href="#icon-shield"></use>
+                    </svg>
+                </div>
+                <h3 class="mb-20">HVAC Mold Removal</h3>
+                <p class="body-copy text-muted mb-30">Safely remediate damp, musty ductwork. We use EPA registered sanitizers to neutralize active microbial growth and dormant mold spores.</p>
+                <span class="btn btn-outline-dark w-100 border-radius-md">View Mold Removal Details</span>
             </a>
         </div>
     </div>
 </section>
 
-<section class="section" style="background-color: white;">
-    <div class="container grid-2" style="align-items: center;">
-        <div>
-            <img src="https://via.placeholder.com/800x600/1e293b/ffffff.png?text=Negative+Air+Pressure+Extraction+Diagram" alt="Technical diagram illustrating the source removal method using HEPA-filtered negative air pressure to safely clean HVAC ductwork" class="float-img" style="border-radius: var(--radius-lg);">
+<section class="section">
+    <div class="container grid-2">
+        <div class="order-2 md-order-1">
+            <img src="/empire-air-ducts-cleaning/assets/images/Vent/air-duct-interior-cleaning.webp" alt="Professional negative air extraction equipment cleaning the interior of residential ductwork" class="float-img">
         </div>
-        <div>
-            <h2 style="font-size: 2.2rem;">The Science of Source Removal Extraction</h2>
-            <p>At Empire Air Ducts, we adhere strictly to the National Air Duct Cleaners Association (NADCA) standard known as <strong>Source Removal</strong>. This is the only scientifically proven method to safely and permanently remove contaminants from an HVAC system without pushing them back into your breathable airspace.</p>
-            <p><strong>Step 1: System Isolation and Negative Pressure</strong><br>We begin by sealing off your supply and return registers. We then attach a massive, commercial-grade vacuum unit—equipped with hospital-grade HEPA filters—directly to your main HVAC trunk line. This places the entire system under intense negative pressure, creating a powerful, one-way airflow out of your house.</p>
-            <p><strong>Step 2: Pneumatic Agitation</strong><br>While the system is under this intense suction, we introduce specialized pneumatic tools, such as compressed-air whips and rotary brushes, deep into the ductwork. These tools safely but aggressively scrub the interior walls of your flex and rigid metal ducts.</p>
-            <p><strong>Step 3: Safe Eradication</strong><br>As decades of caked-on dust, dead skin cells, construction debris, and pet dander are dislodged by the whips, the negative pressure instantly pulls the hazardous particulate matter out of your home and directly into our contained filtration system.</p>
+        <div class="order-1 md-order-2">
+            <span class="eyebrow">NADCA Guidelines</span>
+            <h2 class="section-title">The Science of <span class="gradient-text">Source Removal Extraction</span></h2>
+            <p class="body-copy-large">At Empire Air Ducts, we adhere strictly to the National Air Duct Cleaners Association standard known as Source Removal. This is the only scientifically proven method to safely and permanently remove contaminants from an HVAC system without pushing them back into your breathable airspace.</p>
+            <p class="body-copy"><strong>Step 1 System Isolation and Negative Pressure</strong><br>We begin by sealing off your supply and return registers. We then attach a massive commercial grade vacuum unit equipped with hospital grade HEPA filters directly to your main HVAC trunk line. This places the entire system under intense negative pressure, creating a powerful one way airflow out of your house.</p>
+            <p class="body-copy"><strong>Step 2 Pneumatic Agitation</strong><br>While the system is under this intense suction, we introduce specialized pneumatic tools, such as compressed air whips and rotary brushes, deep into the ductwork. These tools safely but aggressively scrub the interior walls of your flex and rigid metal ducts.</p>
+            <p class="body-copy"><strong>Step 3 Safe Eradication</strong><br>As decades of caked on dust, dead skin cells, construction debris, and pet dander are dislodged by the whips, the negative pressure instantly pulls the hazardous particulate matter out of your home and directly into our contained filtration system.</p>
         </div>
     </div>
 </section>
 
-<section class="section section-dark section-glow">
-    <div class="airflow-vector"></div>
-    <div class="container grid-2" style="align-items: center;">
-        <div style="position: relative; z-index: 2;">
-            <h2 style="font-size: 2.2rem; color: white;">The Hidden Impact of Poor Indoor Air Quality</h2>
-            <p style="color: #cbd5e1; font-size: 1.1rem; margin-bottom: 25px;">Your ductwork acts as the lungs of your property. In Southern California, factors like the Santa Ana winds, prolonged dry heat, and seasonal wildfires create an environment where fine particulate matter constantly infiltrates your home.</p>
-            <p style="color: #cbd5e1; margin-bottom: 20px;"><strong>The Health Toll:</strong> When microscopic allergens, volatile organic compounds (VOCs), and mold spores settle in your dark, temperature-controlled ducts, they multiply. Every time your blower motor turns on, these irritants are aerosolized, triggering asthma attacks, unseasonal allergies, and chronic respiratory fatigue in your family or employees.</p>
-            <p style="color: #cbd5e1;"><strong>The Financial Toll:</strong> The danger isn't just to your lungs; it is to your wallet. Even a thin millimeter of dust coating your evaporator coil and blower motor forces your HVAC unit to work up to 30% harder to maintain climate control. By clearing these blockages, professional extraction restores critical airflow, lowers your monthly cooling costs, and prevents catastrophic, multi-thousand-dollar HVAC motor failures.</p>
+<section class="section section-dark">
+    <div class="container grid-2">
+        <div class="order-2 md-order-1">
+            <span class="eyebrow">Indoor Air Quality</span>
+            <h2 class="section-title-light">The Hidden Impact of Poor <span class="gradient-text">Indoor Air Quality</span></h2>
+            <p class="body-copy-large text-light-muted">Your ductwork acts as the lungs of your property. In Southern California, factors like the Santa Ana winds, prolonged dry heat, and seasonal wildfires create an environment where fine particulate matter constantly infiltrates your home.</p>
+            <p class="body-copy text-light-muted"><strong>The Health Toll</strong><br>When microscopic allergens, volatile organic compounds, and mold spores settle in your dark temperature controlled ducts, they multiply. Every time your blower motor turns on, these irritants are aerosolized, triggering asthma attacks, unseasonal allergies, and chronic respiratory fatigue in your family or employees.</p>
+            <p class="body-copy text-light-muted"><strong>The Financial Toll</strong><br>The danger is not just to your lungs it is to your wallet. Even a thin millimeter of dust coating your evaporator coil and blower motor forces your HVAC unit to work up to 30 percent harder to maintain climate control. By clearing these blockages, professional extraction restores critical airflow, lowers your monthly cooling costs, and prevents catastrophic multi thousand dollar HVAC motor failures.</p>
         </div>
-        <div style="position: relative; z-index: 2;">
-             <img src="https://via.placeholder.com/800x600/0ea5e9/ffffff.png?text=Clean+Indoor+Air+Quality+Result" alt="A clean, healthy living room environment free of airborne dust and allergens after professional duct extraction" class="float-img-delayed" style="border-radius: var(--radius-lg); border-color: rgba(255,255,255,0.2);">
+        <div class="order-1 md-order-2">
+             <img src="/empire-air-ducts-cleaning/assets/images/Vent/air-duct-vacuum-cleaning-floor.webp" alt="Clean healthy living room environment free of airborne dust and allergens after professional duct extraction" class="float-img-delayed border-radius-md">
         </div>
     </div>
 </section>
 
 <section class="section bg-light">
     <div class="container">
-        <div class="text-center" style="max-width: 800px; margin: 0 auto 50px; text-align: center;">
-            <h2 style="font-size: 2.5rem;">Air Duct Extraction FAQ</h2>
-            <p style="color: var(--text-muted);">In-depth technical answers to help you make an informed decision regarding your property's ventilation health.</p>
+        <div class="text-center max-w-800 mb-50">
+            <span class="eyebrow">Knowledge Base</span>
+            <h2 class="section-title">Air Duct Extraction <span class="gradient-text">FAQ</span></h2>
+            <p class="section-subtitle">In depth technical answers to help you make an informed decision regarding your property ventilation health.</p>
         </div>
         
-        <div style="max-width: 900px; margin: 0 auto;">
+        <div class="max-w-900">
             <details>
-                <summary>Will the negative air pressure vacuum damage my flexible ductwork? <span>+</span></summary>
-                <p>No. Our advanced extraction equipment is meticulously calibrated to safely handle all types of residential and commercial ventilation. Whether you have modern flexible ducting, traditional rigid sheet metal, or older fiberglass duct board, our pneumatic whips are designed to be gentle on the duct walls while remaining highly effective at dislodging built-up debris.</p>
+                <summary>Will the negative air pressure vacuum damage my flexible ductwork?</summary>
+                <p>No. Our advanced extraction equipment is meticulously calibrated to safely handle all types of residential and commercial ventilation. Whether you have modern flexible ducting, traditional rigid sheet metal, or older fiberglass duct board, our pneumatic whips are designed to be gentle on the duct walls while remaining highly effective at dislodging built up debris.</p>
             </details>
             <details>
-                <summary>Why shouldn't I hire a budget carpet cleaner to clean my air ducts? <span>+</span></summary>
-                <p>Many budget "blow-and-go" companies utilize standard shop vacuums that lack the raw CFMs (cubic feet per minute) required to place an entire home's HVAC system under true negative pressure. Without this pressure and commercial HEPA filtration, these budget services often just agitate the dust and blow it directly out of your vents and into your living space, making your indoor air quality significantly worse than before.</p>
+                <summary>Why shouldn't I hire a budget carpet cleaner to clean my air ducts?</summary>
+                <p>Many budget blow and go companies utilize standard shop vacuums that lack the raw CFMs required to place an entire home HVAC system under true negative pressure. Without this pressure and commercial HEPA filtration, these budget services often just agitate the dust and blow it directly out of your vents and into your living space, making your indoor air quality significantly worse than before.</p>
             </details>
             <details>
-                <summary>What is HVAC sanitization, and do I actually need it? <span>+</span></summary>
-                <p>HVAC sanitization is an optional add-on that involves fogging an EPA-registered, botanical antimicrobial solution throughout your freshly cleaned ductwork. We highly recommend this service if your system has previously suffered from roof leaks or moisture issues, has a lingering musty/mildew odor, or if you are moving into a previously occupied home and want to permanently neutralize existing biological contaminants left by previous owners or pets.</p>
+                <summary>What is HVAC sanitization, and do I actually need it?</summary>
+                <p>HVAC sanitization is an optional add on that involves fogging an EPA registered botanical antimicrobial solution throughout your freshly cleaned ductwork. We highly recommend this service if your system has previously suffered from roof leaks or moisture issues, has a lingering musty odor, or if you are moving into a previously occupied home and want to permanently neutralize existing biological contaminants left by previous owners or pets.</p>
             </details>
             <details>
-                <summary>How long does a comprehensive extraction take? <span>+</span></summary>
-                <p>Because we do not cut corners, a standard extraction for a single-family home (approximately 1,500 to 2,500 square feet) with one central HVAC system typically takes between 2.5 to 4 hours. Larger commercial properties or multi-story homes with dual HVAC units will naturally require additional time to ensure every branch line is fully cleared.</p>
+                <summary>How long does a comprehensive extraction take?</summary>
+                <p>Because we do not cut corners, a standard extraction for a single family home approximately 1,500 to 2,500 square feet with one central HVAC system typically takes between 2.5 to 4 hours. Larger commercial properties or multi story homes with dual HVAC units will naturally require additional time to ensure every branch line is fully cleared.</p>
             </details>
         </div>
     </div>
 </section>
 
-<section class="section section-dark text-center" style="background: var(--bg-dark); border-top: 1px solid rgba(255,255,255,0.1);">
-    <div class="container" style="position: relative; z-index: 2;">
-        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Ready to Book Your Deep Extraction?</h2>
-        <p style="font-size: 1.1rem; margin: 0 auto 30px; color: #cbd5e1; max-width: 600px;">Contact our elite technicians today for a fast, transparent quote tailored to your specific HVAC architecture.</p>
-        <a href="tel:9514812118" class="btn btn-glow" style="font-size: 1.2rem; padding: 15px 40px;">Call (951) 481-2118</a>
+<section class="section section-dark text-center">
+    <div class="container max-w-800">
+        <h2 class="section-title-light mb-20">Ready to Book Your <span class="gradient-text">Deep Extraction?</span></h2>
+        <p class="body-copy-large text-light-muted mb-40">Contact our elite technicians today for a fast transparent quote tailored to your specific HVAC architecture.</p>
+        <div class="cta-group-center">
+            <a href="tel:9514812118" class="btn btn-glow">Call (951) 481-2118</a>
+        </div>
     </div>
 </section>
